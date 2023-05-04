@@ -1,9 +1,12 @@
-﻿using System.Globalization;
+﻿using ProstyKalkulator;
+using System.Globalization;
 
 internal class Program
 {
     static void Main(string[] args)
     {
+
+        var test = new Test();
         if (args.Length == 0)
         {
             Console.WriteLine("Brak argumentu podaj 'P' lub 'Z'");
