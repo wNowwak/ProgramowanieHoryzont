@@ -18,8 +18,10 @@ internal class Program
     {
         var kalkulator = new Kalkulator();
 
-        var wynik = kalkulator.Dodaj(1, 2);
-        Console.WriteLine($"Wynik to: {wynik}");
+        //var wynik = kalkulator.Dodaj(1, 2);
+        //var drugiWynik = kalkulator.Dodaj(2.0m, 2.4m);
+        var test = kalkulator.Dodaj(kalkulator, kalkulator);
+        //Console.WriteLine($"Wynik to: {wynik}");
 
         var wynikDecimal = kalkulator.Dodaj(2.0m, 3.0m);
         Console.WriteLine($"Wynik to: {wynikDecimal}");

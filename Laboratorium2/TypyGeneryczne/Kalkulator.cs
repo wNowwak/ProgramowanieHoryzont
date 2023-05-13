@@ -2,14 +2,20 @@
 {
     internal class Kalkulator
     {
-        public T Dodaj<T>(T x, T y) where T : struct
+        public T Dodaj<T>(T x, T y)
         {
-            return x + y;
+            dynamic x1 = x;
+            dynamic y1 = y;
+            
+            return x1 + y1;
         }
 
         public T Odejmij<T>(int x, int y)
         {
-            return x - y;
+            dynamic x1 = x;
+            dynamic y1 = y;
+
+            return x1 - y1;
         }
     }
 }
