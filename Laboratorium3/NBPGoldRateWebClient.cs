@@ -20,13 +20,15 @@ namespace Laboratorium3
         #region Public Methods
         public GoldDTO[] GetLastGoldRates(int count)
         {
-            var wynik = new GoldDTO[count];
-            
-            var response = _webClient.DownloadString($"cenyzlota/last/{count}");
+            try
+            {
+                return Get<GoldDTO[]>($"cenyzlota/last/{count}");
+            }
+            catch (Exception)
+            {
+                throw;
+            }
 
-            wynik = JsonConvert.DeserializeObject<GoldDTO[]>(response);
-            
-            return wynik;
         }
 
         public GoldDTO GetGoldRateInSpecificDate(DateTime date)
@@ -34,8 +36,7 @@ namespace Laboratorium3
             var wynik = new GoldDTO();
             try
             {
-                var response = _webClient.DownloadString($"cenyzlota/{date.ToString(_dateFormat)}");
-                wynik = JsonConvert.DeserializeObject<GoldDTO[]>(response).First();
+                wynik = Get<GoldDTO[]>($"cenyzlota/{date.ToString(_dateFormat)}").First();
                 Console.WriteLine($"Notowanie w dniu: {wynik.Date}: {wynik.Price}");
             }
             catch (WebException ex)

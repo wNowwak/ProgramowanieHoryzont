@@ -4,6 +4,8 @@
     {
         public T Dodaj<T>(T x, T y)
         {
+
+
             dynamic x1 = x;
             dynamic y1 = y;
             

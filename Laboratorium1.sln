@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProstyKalkulator", "ProstyK
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laboratorium2", "Laboratorium2\Laboratorium2.csproj", "{C89DD738-8FF3-4E42-8667-201F3E39EFF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboratorium3", "Laboratorium3\Laboratorium3.csproj", "{17149D6D-1ADF-4746-9E4F-64DD77EF2F10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laboratorium3", "Laboratorium3\Laboratorium3.csproj", "{17149D6D-1ADF-4746-9E4F-64DD77EF2F10}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laboratorium4", "Laboratorium4\Laboratorium4.csproj", "{A1763523-75FC-4373-97D8-B742BD77A83F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboratorium_Testy", "Laboratorium_Testy\Laboratorium_Testy.csproj", "{3C568C92-76A7-4DD7-8E18-238D52538392}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{17149D6D-1ADF-4746-9E4F-64DD77EF2F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17149D6D-1ADF-4746-9E4F-64DD77EF2F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17149D6D-1ADF-4746-9E4F-64DD77EF2F10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1763523-75FC-4373-97D8-B742BD77A83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1763523-75FC-4373-97D8-B742BD77A83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1763523-75FC-4373-97D8-B742BD77A83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1763523-75FC-4373-97D8-B742BD77A83F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C568C92-76A7-4DD7-8E18-238D52538392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C568C92-76A7-4DD7-8E18-238D52538392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C568C92-76A7-4DD7-8E18-238D52538392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C568C92-76A7-4DD7-8E18-238D52538392}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

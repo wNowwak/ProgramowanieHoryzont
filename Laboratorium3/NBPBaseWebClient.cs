@@ -1,4 +1,6 @@
-﻿using System.Net;
+﻿using Laboratorium3.Models;
+using Newtonsoft.Json;
+using System.Net;
 
 namespace Laboratorium3
 {
@@ -11,6 +13,14 @@ namespace Laboratorium3
         {
             _webClient = new WebClient();
             _webClient.BaseAddress = "http://api.nbp.pl/api/";
+        }
+
+        protected T Get<T>(string url) 
+        {
+            throw new NotImplementedException();
+            var response = _webClient.DownloadString(url);
+            var result = JsonConvert.DeserializeObject<T>(response);
+            return result!;
         }
     }
 }

@@ -9,8 +9,17 @@ internal class Program
     static void Main(string[] args)
     {
 
-        ICommonWebClient webClient = null;
+        IGoldRateWebClient goldRateWebClient = new NBPGoldRateWebClient();
 
+        try
+        {
+            var rates = goldRateWebClient.GetLastGoldRates(5);
+
+        }
+        catch (Exception ex)
+        {
+
+        }
         //for (int i = 0; i > -20; i--)
         //{
         //    client.GetGoldRateInSpecificDate(DateTime.Now.AddDays(i));
