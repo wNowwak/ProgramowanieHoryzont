@@ -36,8 +36,8 @@ internal class Program
         userLogger.Log("Testowa wartość1");
         userLogger.Log("Testowa wartość1");
 
-        userLogger.LogZStatycznaKlasa("Statyczna wartość", TypLogow.Warning);
-        userLogger.LogZStatycznaKlasa("Statyczna wartość", TypLogow.Error);
+        //userLogger.LogZStatycznaKlasa("Statyczna wartość", TypLogow.Warning);
+        //userLogger.LogZStatycznaKlasa("Statyczna wartość", TypLogow.Error);
     }
 
     private static void PrzykladTemperatura()

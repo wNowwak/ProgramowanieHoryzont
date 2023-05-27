@@ -7,6 +7,9 @@ namespace Laboratorium3
 {
     internal class NBPCurrencyWebClient : NBPBaseWebClient ,ICurrencyWebClient
     {
+        public NBPCurrencyWebClient(string address) : base(address)
+        {
+        }
 
         public CurrencyDTO GetCurrencyByCode(string code)
         {

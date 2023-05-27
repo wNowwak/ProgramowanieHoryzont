@@ -202,6 +202,11 @@ namespace Laboratorium4.DataBaseRepository
             };
             return nameParameter;   
         }
+
+        public void SaveGoldRate(Laboratorium3.Models.GoldDTO goldRate)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
 
     }

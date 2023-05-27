@@ -1,4 +1,5 @@
-﻿using Laboratorium4.Models;
+﻿using Laboratorium3.Models;
+using Laboratorium4.Models;
 
 namespace Laboratorium4.DataBaseRepository.Interfaces
 {
@@ -10,5 +11,6 @@ namespace Laboratorium4.DataBaseRepository.Interfaces
         void InsertNewName(string name);
         void InsertNewPerson(Person person);
         List<string> GetAllSurnames();
+        void SaveGoldRate(GoldDTO goldRate);
     }
 }

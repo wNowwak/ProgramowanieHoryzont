@@ -5,8 +5,12 @@ using System.Net;
 
 namespace Laboratorium3
 {
-    internal class NBPGoldRateWebClient : NBPBaseWebClient, IGoldRateWebClient
+    public class NBPGoldRateWebClient : NBPBaseWebClient, IGoldRateWebClient
     {
+
+        public NBPGoldRateWebClient(string address) : base(address)
+        {
+        }
         #region Constructors
         public GoldDTO GetLastGoldRate()
         {

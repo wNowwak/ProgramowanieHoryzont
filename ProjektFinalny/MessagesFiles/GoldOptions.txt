@@ -1,0 +1,3 @@
+﻿Aktualnie obowiązująca cena złota - 1
+Seria ostatnich wybranych notowań cen złota - 2
+Cena złota opublikowana w dniu dzisiejszym (albo brak danych) - 3

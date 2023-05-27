@@ -3,7 +3,7 @@ using Laboratorium2.Interfejsy;
 
 namespace Laboratorium2.Klasy.Loggery
 {
-    internal class ConsoleLogger 
+    public class ConsoleLogger  : IUserLogger
     {
         private readonly IFormaterLogow _formaterLogow;
 

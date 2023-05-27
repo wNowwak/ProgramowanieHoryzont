@@ -9,7 +9,7 @@ internal class Program
     static void Main(string[] args)
     {
 
-        IGoldRateWebClient goldRateWebClient = new NBPGoldRateWebClient();
+        IGoldRateWebClient goldRateWebClient = new NBPGoldRateWebClient("");
 
         try
         {

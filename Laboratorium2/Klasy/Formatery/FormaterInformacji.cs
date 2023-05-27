@@ -2,7 +2,7 @@
 
 namespace Laboratorium2.Klasy.Formatery
 {
-    internal class FormaterInformacji : BazowyFormaterLogow, IFormaterLogow
+    public class FormaterInformacji : BazowyFormaterLogow, IFormaterLogow
     {
         public string FormatujLogi(string logi)
         {
