@@ -9,5 +9,6 @@ namespace Laboratorium3.Interfaces
         GoldDTO GetGoldRateInSpecificDate(DateTime date);
         bool IsGoldRatePublishedToday();
         IList<GoldDTO> GetGoldRatesInSpecificPeriod(DateTime startDate, DateTime endDate);
+        GoldDTO? GetTodayGoldRate();
     }
 }

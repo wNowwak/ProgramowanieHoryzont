@@ -98,6 +98,31 @@ namespace Laboratorium3
 
             return wynik!;
         }
+
+        public GoldDTO? GetTodayGoldRate()
+        {
+            var wynik = new GoldDTO();
+            
+            try
+            {
+                var response = _webClient.DownloadString("cenyzlota/today");
+                wynik = JsonConvert.DeserializeObject<GoldDTO>(response);
+            }
+            catch (WebException ex)
+            {
+                if (ex.Status == WebExceptionStatus.ProtocolError)
+                {
+                    var exResponse = ex.Response as HttpWebResponse;
+                    if (exResponse.StatusCode == HttpStatusCode.NotFound)
+                    {
+                        return null;
+                    }
+                }
+                else
+                    Console.WriteLine($"Nieznany błąd :{ex.Message}");
+            }
+            return wynik;
+        }
         #endregion
         #region Private methods
 

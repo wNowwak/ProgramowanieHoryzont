@@ -61,13 +61,123 @@ namespace ProjektFinalny {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Aktualne notowanie waluty {0} to: {1} z dnia: {2}.
+        /// </summary>
+        internal static string ActualCurrencyRate {
+            get {
+                return ResourceManager.GetString("ActualCurrencyRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aktualnie obowiązujący kurs waluty - 1
+        ///Ostatnie notowania dla waluty - 2.
+        /// </summary>
+        internal static string CurrencyOptions {
+            get {
+                return ResourceManager.GetString("CurrencyOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ile notowań waluty pobrać?.
+        /// </summary>
+        internal static string CurrencyRatesCount {
+            get {
+                return ResourceManager.GetString("CurrencyRatesCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Podaj kod waluty.
+        /// </summary>
+        internal static string GetCurrencyCode {
+            get {
+                return ResourceManager.GetString("GetCurrencyCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Aktualnie obowiązująca cena złota - 1
         ///Seria ostatnich wybranych notowań cen złota - 2
-        ///Cena złota opublikowana w dniu dzisiejszym (albo brak danych) - 3.
+        ///Cena złota opublikowana w dniu dzisiejszym (albo brak danych) - 3
+        ///Najwyższa cena złota z ostatnich 30 notowań - 4.
         /// </summary>
         internal static string GoldOptions {
             get {
                 return ResourceManager.GetString("GoldOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ile notowań złota pobrać?.
+        /// </summary>
+        internal static string GoldRatesCount {
+            get {
+                return ResourceManager.GetString("GoldRatesCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ostatnie notowania cen złota to:  {0}.
+        /// </summary>
+        internal static string LastCurrencyRates {
+            get {
+                return ResourceManager.GetString("LastCurrencyRates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;Ostatni dostępna cena złota to: {0} PLN z dnia {1}&quot;.
+        /// </summary>
+        internal static string LastGoldRateResult {
+            get {
+                return ResourceManager.GetString("LastGoldRateResult", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ostatnie notowania cen złota to:.
+        /// </summary>
+        internal static string LastGoldRates {
+            get {
+                return ResourceManager.GetString("LastGoldRates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brak notowań w dniu dzisiejszym.
+        /// </summary>
+        internal static string NoRatesToday {
+            get {
+                return ResourceManager.GetString("NoRatesToday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brak waluty o kodzie: {0}.
+        /// </summary>
+        internal static string NoSuchCurrency {
+            get {
+                return ResourceManager.GetString("NoSuchCurrency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dzisiejsza cena złota: {0}.
+        /// </summary>
+        internal static string TodayGoldRate {
+            get {
+                return ResourceManager.GetString("TodayGoldRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Najwyższa cena złota z ostatnich 30 notowań to: {0} z dnia: {1}.
+        /// </summary>
+        internal static string TopGoldRate {
+            get {
+                return ResourceManager.GetString("TopGoldRate", resourceCulture);
             }
         }
         

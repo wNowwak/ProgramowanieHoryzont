@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Laboratorium3
 {
-    internal class NBPCommonWebClient : ICommonWebClient
+    internal class NBPCommonWebClient 
     {
         private readonly ICurrencyWebClient _currencyWebClient;
         private readonly IGoldRateWebClient _goldRateWebClient;
@@ -40,6 +40,11 @@ namespace Laboratorium3
         }
 
         public GoldDTO[] GetLastGoldRates(int count)
+        {
+            throw new NotImplementedException();
+        }
+
+        public GoldDTO GetTodayGoldRate()
         {
             throw new NotImplementedException();
         }

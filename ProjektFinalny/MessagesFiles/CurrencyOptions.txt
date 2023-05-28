@@ -1,0 +1,3 @@
+﻿Aktualnie obowiązujący kurs waluty - 1
+Ostatnie notowania dla waluty - 2
+Kurs waluty z dnia dzisiejszego - 3

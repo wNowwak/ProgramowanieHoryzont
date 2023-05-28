@@ -118,8 +118,44 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ActualCurrencyRate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>messagesfiles\actualcurrencyrate.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CurrencyOptions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>messagesfiles\currencyoptions.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CurrencyRatesCount" xml:space="preserve">
+    <value>Ile notowań waluty pobrać?</value>
+  </data>
+  <data name="GetCurrencyCode" xml:space="preserve">
+    <value>Podaj kod waluty</value>
+  </data>
   <data name="GoldOptions" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>messagesfiles\goldoptions.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GoldRatesCount" xml:space="preserve">
+    <value>Ile notowań złota pobrać?</value>
+  </data>
+  <data name="LastCurrencyRates" xml:space="preserve">
+    <value>Ostatnie notowania cen złota to:  {0}</value>
+  </data>
+  <data name="LastGoldRateResult" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>messagesfiles\lastgoldrateresult.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="LastGoldRates" xml:space="preserve">
+    <value>Ostatnie notowania cen złota to:</value>
+  </data>
+  <data name="NoRatesToday" xml:space="preserve">
+    <value>Brak notowań w dniu dzisiejszym</value>
+  </data>
+  <data name="NoSuchCurrency" xml:space="preserve">
+    <value>Brak waluty o kodzie: {0}</value>
+  </data>
+  <data name="TodayGoldRate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>messagesfiles\todaygoldrate.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TopGoldRate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>messagesfiles\topgoldrate.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="WhatToDo" xml:space="preserve">
     <value>W celu pobrania kursu walut wcisnij 1, zlota 2</value>

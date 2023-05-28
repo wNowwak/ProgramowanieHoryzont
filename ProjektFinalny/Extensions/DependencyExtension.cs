@@ -17,8 +17,11 @@ public static class DependencyExtension
         collection.AddTransient<IUserInputHandler, UserInputHandler>();
         collection.AddTransient<IUserLogger, ConsoleLogger>();
         collection.AddTransient<IGoldRateProcessor, GoldRateProcessor>();
+        collection.AddTransient<ICurrencyProcessor, CurrencyProcessor>();
         collection.AddSingleton<IFormaterLogow, FormaterInformacji>();
         collection.AddSingleton<IGoldRateWebClient, NBPGoldRateWebClient>(_ => 
         new NBPGoldRateWebClient("http://api.nbp.pl/api/"));
+        collection.AddSingleton<ICurrencyWebClient, NBPCurrencyWebClient>(_ => 
+        new NBPCurrencyWebClient("http://api.nbp.pl/api/"));
     }
 }
