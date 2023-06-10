@@ -1,0 +1,59 @@
+﻿<Window x:Class="Kalkulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kalkulator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="firstNumber" Grid.Column="0" FontSize="20pt"/>
+            <TextBlock x:Name="operation" Grid.Column="1" FontSize="20pt"/>
+            <TextBlock x:Name="lastNumber" Grid.Column="2" FontSize="20pt"/>
+            <TextBlock Text="=" Grid.Column="3" FontSize="20pt"/>
+            <TextBlock x:Name="resultText" Grid.Column="4" FontSize="20pt"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Content="1" Grid.Column="0" Grid.Row="0" Click="NuberButtonClick"/>
+            <Button Content="2" Grid.Column="1" Grid.Row="0" Click="NuberButtonClick"/>
+            <Button Content="3" Grid.Column="2" Grid.Row="0" Click="NuberButtonClick"/>
+            <Button Content="4" Grid.Column="0" Grid.Row="1" Click="NuberButtonClick"/>
+            <Button Content="5" Grid.Column="1" Grid.Row="1" Click="NuberButtonClick"/>
+            <Button Content="6" Grid.Column="2" Grid.Row="1" Click="NuberButtonClick"/>
+            <Button Content="7" Grid.Column="0" Grid.Row="2" Click="NuberButtonClick"/>
+            <Button Content="8" Grid.Column="1" Grid.Row="2" Click="NuberButtonClick"/>
+            <Button Content="9" Grid.Column="2" Grid.Row="2" Click="NuberButtonClick"/>
+            <Button Content="0" Grid.Column="1" Grid.Row="3" Click="NuberButtonClick"/>
+            <Button Content="." Grid.Column="0" Grid.Row="3"/>
+            <Button Content="=" Grid.Column="2" Grid.Row="3" Click="CountResult"/>
+            <Button Content="+" Grid.Column="3" Grid.Row="0" Click="OperationButtonClick"/>
+            <Button Content="-" Grid.Column="3" Grid.Row="1" Click="OperationButtonClick"/>
+            <Button Content="/" Grid.Column="3" Grid.Row="2" Click="OperationButtonClick"/>
+            <Button Content="*" Grid.Column="3" Grid.Row="3" Click="OperationButtonClick"/>
+        </Grid>
+    </Grid>
+</Window>

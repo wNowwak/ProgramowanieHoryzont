@@ -33,6 +33,7 @@ namespace Laboratorium3
 
         public CurrencyDTO GetLastCurrencyRates(string code, int count)
         {
+            //Thread.Sleep(5000);
             var result = new CurrencyDTO();
 
             var response = _webClient.DownloadString($"exchangerates/rates/a/{code}/last/{count}");
